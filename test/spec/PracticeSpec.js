@@ -176,7 +176,7 @@ describe('practice.js', function () {
 			})
 		})
 	})
-	
+
 	describe('MakePerson', function () {
 		it('should exist', function () {
 			expect(MakePerson).toBeDefined();
@@ -184,7 +184,7 @@ describe('practice.js', function () {
 		it('should return an object', function () {
 			expect(MakePerson()).toEqual(jasmine.any(Object));
 		})
-		
+
 		describe('return object', function () {
 			var returnObject = {};
 			beforeEach(function () {
@@ -192,7 +192,7 @@ describe('practice.js', function () {
 			})
 			it('should have 3 keys named "name", "birthday" and "ssn"', function () {
 				var numberOfKeys = Object.keys(returnObject).length;
-				
+
 				expect(numberOfKeys).toBe(3);
 				expect(returnObject.hasOwnProperty('name')).toBe(true);
 				expect(returnObject.hasOwnProperty('birthday')).toBe(true);
@@ -204,9 +204,9 @@ describe('practice.js', function () {
 				expect(returnObject.ssn).toBe('123456789');
 			})
 		})
-		
+
 	})
-	
+
 	describe('MakeCard', function () {
 		it('should exist', function () {
 			expect(MakeCard).toBeDefined();
@@ -215,7 +215,7 @@ describe('practice.js', function () {
 			expect(MakeCard()).toEqual(jasmine.any(Object));
 		})
 	})
-	
+
 	describe('bindCard', function () {
 		it('should exist', function () {
 			expect(bindCard).toBeDefined();
@@ -241,6 +241,5 @@ describe('practice.js', function () {
 			expect(hasProps).toBe(true);
 		})
 	})
-
 
 })
